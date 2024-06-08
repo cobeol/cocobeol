@@ -1,6 +1,7 @@
 import Alliance from "@pages/Alliance";
 import Build from "@pages/Build";
 import Main from "@pages/Main";
+import NotFound from "@pages/NotFound";
 import Notification from "@pages/Notification";
 import Trade from "@pages/Trade";
 import War from "@pages/War";
@@ -34,5 +35,9 @@ export const RouterInfo = [
     {
         path: "/wiki",
         element: <Wiki />,
+    },
+    {
+        path: "/*",
+        element: <NotFound />,
     },
 ];
