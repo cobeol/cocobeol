@@ -1,0 +1,113 @@
+.container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 8fr 3fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.item {
+    padding: 12px;
+}
+
+.item:nth-child(1) {
+    grid-row: 1 / span 2;
+}
+
+.item:nth-child(2) {
+    grid-row: 1 / span 2;
+}
+
+.item > div {
+    width: 100%;
+    height: 100%;
+    background-color: #f6f7fb;
+    border-radius: 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
+        0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+}
+
+.main {
+    position: relative;
+    text-align: center;
+}
+
+.main > div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main > div > h1 {
+    font-size: 80px;
+}
+
+.main > div > h2 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.userInfo {
+    position: relative;
+    text-align: center;
+}
+
+.userInfo > div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.userInfo > div > img {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+}
+
+.userInfo > div > h1 {
+    padding-top: 5px;
+}
+
+.userInfo span {
+    font-size: 17px;
+    font-weight: 600;
+    color: black;
+}
+
+.userInfo span,
+img {
+    vertical-align: middle;
+}
+
+.userInfo img {
+    width: 28px;
+    height: 28px;
+    padding-right: 5px;
+}
+
+.discord {
+    width: 26px !important;
+    height: 26px !important;
+    padding-right: 6px !important;
+}
+
+/* .userInfo a:hover > span {
+    text-decoration-line: underline !important;
+    text-decoration: black;
+} */
+
+.history {
+    position: relative;
+    text-align: center;
+}
+
+.history > div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
