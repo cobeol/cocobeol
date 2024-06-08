@@ -1,6 +1,6 @@
 import "@components/SideMenu.css";
 import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export function SideMenu({ target, children }: any) {
     return (
@@ -20,16 +20,26 @@ export function SideMenu({ target, children }: any) {
 }
 
 function SideMenuBtn({ link, selected }: any) {
+    const navigate = useNavigate();
     return (
         <div>
             <button
                 type="button"
                 className={(selected ? "selected " : "") + link}
+                onClick={onSideMenuBtnClick}
             >
-                <Link to={`/${link.replace("home", "")}`}>
-                    <img src={require(`@assets/${link}.svg`)} alt={link}></img>
-                </Link>
+                <img src={require(`@assets/${link}.svg`)} alt={link}></img>
             </button>
         </div>
     );
+
+    function onSideMenuBtnClick(
+        event: React.MouseEvent<HTMLElement, MouseEvent>
+    ) {
+        navigate(
+            `/${event.currentTarget.className
+                .replace("selected ", "")
+                .replace("home", "")}`
+        );
+    }
 }

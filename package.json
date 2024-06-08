@@ -1,6 +1,6 @@
 {
     "name": "cocobeol",
-    "version": "0.1.0-alpha",
+    "version": "0.1.0-alpha1",
     "main": "./public/electron.js",
     "homepage": "./",
     "private": true,
