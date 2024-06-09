@@ -2,8 +2,7 @@
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 8fr 3fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 11fr;
 }
 
 .item {
@@ -20,16 +19,27 @@
 }
 
 .main {
-    position: relative;
-    text-align: center;
+    /* text-align: center; */
+}
+
+.main > div::-webkit-scrollbar {
+    width: 20px;
+}
+.main > div::-webkit-scrollbar-thumb {
+    background-color: #2f3542;
+    border-radius: 10px 20px 20px 10px;
+    background-clip: padding-box;
+    border: 5px solid transparent;
+}
+.main > div::-webkit-scrollbar-track {
+    background-color: #f6f7fb;
+    border-radius: 0px 20px 20px 0px;
 }
 
 .main > div {
-    position: absolute;
     width: 100%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    height: 600px;
+    overflow-y: auto;
 }
 
 .main > div > h1 {
@@ -47,4 +57,44 @@
     top: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
+}
+
+.alley {
+    padding: 20px;
+}
+
+.alley h1 {
+    font-size: 38px;
+}
+
+.alley > ul {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.alley > ul > li {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.alley > ul > li > span {
+    /* padding-right: 10px; */
+}
+
+.alley span, img {
+    vertical-align: bottom !important;
+}
+
+.alley img {
+    width: 22px;
+    height: 22px;
+    padding-right: 6px;
+}
+
+.alley span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.guildAlley span {
 }
