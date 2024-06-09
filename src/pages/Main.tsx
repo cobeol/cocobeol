@@ -3,6 +3,7 @@ import styles from "@pages/Main.module.css";
 import Wrapper from "@components/Wrapper";
 import { Container, Item } from "@components/Container";
 import { SideMenu } from "@components/SideMenu";
+import { Discord, Roblox } from "@components/Icon";
 // import { Container } from "react-bootstrap";
 // import ImageCard from "@components/ImageCard";
 // import Wrapper from "@components/Wrapper";
@@ -33,18 +34,11 @@ export default function Main() {
                             />
                             <h1>코벌</h1>
                             <div>
-                                <img
-                                    src={require("@assets/roblox.svg").default}
-                                    alt="roblox"
-                                />
+                                <Roblox />
                                 <span>cobeo111</span>
                             </div>
                             <div>
-                                <img
-                                    src={require("@assets/discord.svg").default}
-                                    alt="discord"
-                                    className="discord"
-                                />
+                                <Discord />
                                 <span>cobeol0111</span>
                             </div>
                         </div>
