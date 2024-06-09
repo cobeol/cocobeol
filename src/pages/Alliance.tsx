@@ -46,20 +46,17 @@ export default function Alliance() {
                                     <li>
                                         <span>Eon Origin</span> (
                                         <Roblox />
-                                        <span>Rhea_No0B</span>, <Discord />
-                                        <span>cp_pie</span>)
+                                        <span>Rhea_No0B</span>)
                                     </li>
                                     <li>
                                         <span>Samsung</span> (
                                         <Roblox />
-                                        <span>tarrvos</span>, <Discord />
-                                        <span>carnival4219</span>)
+                                        <span>tarrvos</span>)
                                     </li>
                                     <li>
                                         <span>Sakura Stand</span> (
                                         <Roblox />
-                                        <span>123AAAFG</span>, <Discord />
-                                        <span>steam64</span>)
+                                        <span>123AAAFG</span>)
                                     </li>
                                 </ul>
                             </div>
