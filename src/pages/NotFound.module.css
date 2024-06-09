@@ -3,7 +3,6 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 11fr;
-    grid-template-rows: 1fr;
 }
 
 .item {
@@ -34,9 +33,9 @@
 
 .main > div > h1 {
     font-size: 50px;
-    color: #E24462;
+    color: #e24462;
 }
 
 .main > div > h2 {
-    color: #E24462;
+    color: #e24462;
 }
