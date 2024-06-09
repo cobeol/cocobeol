@@ -40,13 +40,13 @@
     border-radius: 25px;
     border: none;
     cursor: pointer;
-    background-color: #F6F7FB;
+    background-color: #f6f7fb;
 }
 
 .sideMenu button:hover {
-    background-color: #EEEDEE;
+    background-color: #eeedee;
 }
 
 .sideMenu .selected {
-    background-color: #EEEDEE;
+    background-color: #eeedee;
 }

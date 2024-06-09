@@ -21,17 +21,131 @@
 
 .main {
     position: relative;
+}
+
+.header {
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    /* padding-bottom: 5px; */
+}
+
+.header > hr {
+    background: black;
+    height: 2px;
+    border: 0;
+}
+
+.header > h1 {
+    font-size: 38px;
+    padding-bottom: 4px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* padding-left: 25px;
+    padding-right: 25px; */
+}
+
+.footer img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
     text-align: center;
 }
 
-.main > div {
-    position: absolute;
-    width: 100%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+.footer button {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #f6f7fb;
 }
 
-.main > div > h1 {
-    font-size: 80px;
+.footer button:hover {
+    background-color: #eeedee;
 }
+
+.footer .selected {
+    background-color: #eeedee;
+}
+
+.footer button > p {
+    padding: 2.5px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.list {
+    height: 459px;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.list > div {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.list > hr {
+    background: #CDCDCD;
+    height: 1px;
+    border: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.listItem {
+    display: grid;
+    grid-template-columns: 6fr 1fr 1fr 1fr 1fr;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.listItem > p {
+    font-size: 15px;
+}
+
+.listItem > p > img {
+    width: 15px;
+    height: 15px;
+}
+
+.listItem > .postInfo {
+    text-align: right;
+}
+
+.listItem {
+    text-align: center;
+}
+
+.postName {
+    text-align: left;
+}
+
+/* .postInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+} */
+
+/* .list .postName {
+    float: left;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.list .postInfo {
+    float: right;
+    font-size: 15px;
+} */
