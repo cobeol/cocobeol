@@ -53,15 +53,6 @@
     text-align: center;
 }
 
-/* .userInfo > div > div {
-    align-items: center;
-    text-align: center !important;
-} */
-
-/* .userInfo > div > div > span, img {
-    vertical-align: middle I !important;
-} */
-
 .userInfo > div {
     position: absolute;
     left: 50%;
@@ -91,17 +82,6 @@
     height: 28px;
     padding-right: 5px;
 }
-
-/* .discord {
-    width: 26px !important;
-    height: 26px !important;
-    padding-right: 6px !important;
-} */
-
-/* .userInfo a:hover > span {
-    text-decoration-line: underline !important;
-    text-decoration: black;
-} */
 
 .history {
     position: relative;

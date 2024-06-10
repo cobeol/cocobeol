@@ -2,6 +2,7 @@ import styles from "@pages/Notification.module.css";
 import Wrapper from "@components/Wrapper";
 import { Container, Item } from "@components/Container";
 import { SideMenu } from "@components/SideMenu";
+import { LeftArrow, RightArrow } from "@components/Icon";
 
 export default function Notification() {
     return (
@@ -25,11 +26,21 @@ export default function Notification() {
                             18개.
                             */}
                             <div className={styles.listItem}>
-                                <p><b>제목</b></p>
-                                <p><b>작성자</b></p>
-                                <p><b>작성일</b></p>
-                                <p><b>조회수</b></p>
-                                <p><b>좋아요</b></p>
+                                <p>
+                                    <b>제목</b>
+                                </p>
+                                <p>
+                                    <b>작성자</b>
+                                </p>
+                                <p>
+                                    <b>작성일</b>
+                                </p>
+                                <p>
+                                    <b>조회수</b>
+                                </p>
+                                <p>
+                                    <b>좋아요</b>
+                                </p>
                             </div>
 
                             <hr />
@@ -46,7 +57,7 @@ export default function Notification() {
 
                             <div className={styles.listItem}>
                                 <p className={styles.postName}>1</p>
-                                <p>3k</p> 
+                                <p>3k</p>
                                 <p>2k</p>
                                 <p>10K</p>
                                 <p>10K</p>
@@ -58,13 +69,7 @@ export default function Notification() {
                             <div>
                                 <div className={styles.leftArrow}>
                                     <button>
-                                        <img
-                                            src={
-                                                require(`@assets/leftArrow.svg`)
-                                                    .default
-                                            }
-                                            alt="leftArrow"
-                                        />
+                                        <LeftArrow />
                                     </button>
                                 </div>
                                 <div>
@@ -119,13 +124,7 @@ export default function Notification() {
                                 </div>
                                 <div className={styles.rightArrow}>
                                     <button>
-                                        <img
-                                            src={
-                                                require(`@assets/rightArrow.svg`)
-                                                    .default
-                                            }
-                                            alt="rightArrow"
-                                        />
+                                        <RightArrow />
                                     </button>
                                 </div>
                             </div>

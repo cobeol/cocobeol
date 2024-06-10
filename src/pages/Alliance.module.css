@@ -2,7 +2,16 @@
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 11fr;
+    grid-template-columns: 1fr 7fr 4fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.item:nth-child(1) {
+    grid-row: 1 / span 2;
+}
+
+.item:nth-child(2) {
+    grid-row: 1 / span 2;
 }
 
 .item {
@@ -19,52 +28,61 @@
 }
 
 .main {
-    /* text-align: center; */
+    position: relative;
+    text-align: center;
 }
 
-.main > div::-webkit-scrollbar {
+.main h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.canvasWrapper {
+    width: 520px;
+    height: 345px;
+    border-radius: 20px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.main canvas {
+    border-radius: 20 !important;
+}
+
+.alleyList {
+    height: 288px !important;
+}
+
+.alleyList > div::-webkit-scrollbar {
     width: 20px;
 }
-.main > div::-webkit-scrollbar-thumb {
+.alleyList > div::-webkit-scrollbar-thumb {
     background-color: #2f3542;
     border-radius: 10px 20px 20px 10px;
     background-clip: padding-box;
     border: 5px solid transparent;
 }
-.main > div::-webkit-scrollbar-track {
+.alleyList > div::-webkit-scrollbar-track {
     background-color: #f6f7fb;
     border-radius: 0px 20px 20px 0px;
 }
 
-.main > div {
+.alleyList > div {
     width: 100%;
-    height: 600px;
+    height: 100%;
     overflow-y: auto;
 }
 
-.main > div > h1 {
-    font-size: 80px;
-}
-
-.comment {
-    position: relative;
-    text-align: center;
-}
-
-.comment > div {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-}
-
 .alley {
-    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .alley h1 {
     font-size: 38px;
+    padding-top: 12px;
 }
 
 .alley > ul {
@@ -72,26 +90,24 @@
     margin-right: 20px;
 }
 
+.alley .title > span {
+    color: #e24462;
+    font-size: 16px;
+    font-weight: 500;
+}
+
 .alley > ul > li {
     padding-top: 2px;
     padding-bottom: 2px;
 }
 
-.alley span,
+.alley .title > span,
 img {
-    vertical-align: bottom !important;
+    vertical-align: bottom;
 }
 
 .alley img {
     width: 22px;
     height: 22px;
     padding-right: 6px;
-}
-
-.alley span {
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.guildAlley span {
 }

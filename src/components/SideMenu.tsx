@@ -14,7 +14,7 @@ export function SideMenu({ target, children }: any) {
             <SideMenuBtn link="war" selected={target === "war"} />
             <SideMenuBtn link="build" selected={target === "build"} />
             <SideMenuBtn link="trade" selected={target === "trade"} />
-            <SideMenuBtn link="wiki" selected={target === "wiki"} />
+            {/* <SideMenuBtn link="wiki" selected={target === "wiki"} /> */}
         </div>
     );
 }
