@@ -23,7 +23,6 @@
 }
 
 .header {
-    padding-top: 5px;
     padding-left: 50px;
     padding-right: 50px;
     /* padding-bottom: 5px; */
@@ -86,6 +85,12 @@
 
 .postName {
     text-align: left;
+    text-decoration: none;
+    color: #000000;
+}
+
+.postName:hover {
+    text-decoration: underline;
 }
 
 .footer {

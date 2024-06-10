@@ -46,7 +46,9 @@ export default function Notification() {
                             <hr />
 
                             <div className={styles.listItem}>
-                                <p className={styles.postName}>1</p>
+                                <a href="/" className={styles.postName}>
+                                    <p>1</p>
+                                </a>
                                 <p>3k</p>
                                 <p>2k</p>
                                 <p>10K</p>
@@ -56,7 +58,9 @@ export default function Notification() {
                             <hr />
 
                             <div className={styles.listItem}>
-                                <p className={styles.postName}>1</p>
+                                <a href="/" className={styles.postName}>
+                                    <p>1</p>
+                                </a>
                                 <p>3k</p>
                                 <p>2k</p>
                                 <p>10K</p>
